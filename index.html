@@ -1,0 +1,45 @@
+<html>
+<body>
+  <div id="root"></div>
+
+  <!-- Include peer dependencies -->
+  <script src="react.production.min.js"></script>
+  <script src="react-dom.production.min.js"></script>
+
+  <!-- Include Taxonium Component -->
+  <script src="taxonium-component.umd.js"></script>
+
+  <script>
+const nwk = `(((('ABMC174-05':0.00003,('ABMC218-05':0.00000,'ABMC172-05':0.00000)'s__Canis lupus':0.00002)'s__Canis lupus':0.00099,('ABCDC108-07':0.00089,('ABBM294-05':0.00007,('ABBM307-05':0.00000,'ABBM295-05':0.00000)'s__Thainycteris aureocollaris':0.00008)'s__Thainycteris aureocollaris':0.00082)sf__Vespertilioninae:0.00010)c__Mammalia:0.00006,((('ABRSS334-06':0.00031,('ABBID022-09':0.00008,'ABBID040-09':0.00010)'s__Kerivoula papillosa':0.00019)g__Kerivoula:0.00050,(('ABRSS336-06':0.00000,'ABRSS371-06':0.00002)'s__Kerivoula cf. papillosa':0.00067,('ABBM113-05':0.00002,('ABBSI226-10':0.00001,('ABBM180-05':0.00000,('ABBM122-05':-0.00001,'ABRVN363-06':0.00003)g__Kerivoula:0.00000)g__Kerivoula:0.00001)g__Kerivoula:0.00001)g__Kerivoula:0.00049)g__Kerivoula:0.00009)g__Kerivoula:0.00027,(((('ABBM060-05':-0.00001,'ABBM052-05':0.00018)'s__Kerivoula minuta':0.00002,('ABBTH121-07':0.00001,'ABRSS347-06':0.00004)'s__Kerivoula minuta':0.00001)'s__Kerivoula minuta':0.00076,((('ABRLA075-06':0.00001,('ABBM264-05':0.00004,('ABBM329-05':0.00000,'ABBM239-05':0.00000)'s__Kerivoula kachinensis':0.00001)'s__Kerivoula kachinensis':0.00001)'s__Kerivoula kachinensis':0.00079,((('ABCMA366-06':0.00001,'ABCMA449-06':0.00001)'s__Kerivoula cf. hardwickii':0.00005,(('ABCMA603-07':0.00001,('ABCMA419-06':0.00000,'ABCMA448-06':0.00000)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00002,(('ABCMA452-06':0.00000,'ABCMA393-06':0.00000)'s__Kerivoula cf. hardwickii':0.00002,('ABCMA342-06':0.00004,('ABCMA392-06':0.00000,'ABCMA365-06':0.00000)'s__Kerivoula cf. hardwickii':0.00003)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00003)'s__Kerivoula cf. hardwickii':0.00044,(('ABBSI163-09':0.00008,'ABRVN349-06':0.00007)'s__Kerivoula hardwickii':0.00024,(('ABBM220-05':0.00001,'ABBM219-05':0.00007)'s__Kerivoula cf. hardwickii':0.00005,('ABRVN488-06':0.00002,(((('ABRVN468-06':0.00000,'ABRVN471-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000,('ABRVN473-06':0.00000,'ABRVN474-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00000,(('ABRVN475-06':0.00000,'ABRVN542-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000,('ABRVN469-06':0.00000,'ABRVN541-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00002,(('ABRVN472-06':0.00000,('ABRVN476-06':0.00000,'ABRVN477-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00000,(('ABRVN478-06':0.00000,'ABRVN519-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000,('ABRVN489-06':0.00000,'ABRVN470-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00000)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00002)'s__Kerivoula cf. hardwickii':0.00038)g__Kerivoula:0.00007)g__Kerivoula:0.00009)g__Kerivoula:0.00013,(('ABBID001-08':0.00005,'ABBID064-09':0.00013)'s__Kerivoula krauensis':0.00054,('ABBTH137-07':0.00016,(('ABBM372-05':0.00006,(('ABBM249-05':0.00000,'ABRLA045-06':0.00000)'s__Kerivoula cf. hardwickii':0.00001,('ABRLA051-06':0.00001,'ABBM265-05':0.00002)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00001)'s__Kerivoula cf. hardwickii':0.00012,('ABBM164-05':0.00004,(('ABBM144-05':0.00002,'ABBM207-05':0.00004)'s__Kerivoula cf. hardwickii':0.00008,('ABRLA096-06':0.00004,('ABBM176-05':0.00001,'ABBM109-05':0.00004)'s__Kerivoula cf. hardwickii':0.00001)g__Kerivoula:0.00001)g__Kerivoula:0.00002)g__Kerivoula:0.00012)g__Kerivoula:0.00006)g__Kerivoula:0.00048)g__Kerivoula:0.00012)g__Kerivoula:0.00007)g__Kerivoula:0.00003,('ABBID020-09':0.00052,(('ABRSS370-06':0.00001,(('ABBTH034-07':0.00000,('ABBTH003-07':0.00000,'ABBTH113-07':0.00000)'s__Kerivoula hardwickii':0.00002)'s__Kerivoula hardwickii':0.00001,('ABBTH025-07':0.00001,('ABBTH001-07':0.00002,'ABBM053-05':0.00004)g__Kerivoula:0.00012)g__Kerivoula:0.00001)g__Kerivoula:0.00003)g__Kerivoula:0.00003,((('ABRLA159-06':0.00000,'ABRLA149-06':0.00002)'s__Kerivoula cf. hardwickii':0.00002,(('ABBM055-05':0.00000,Query:0.00000)'s__Kerivoula cf. hardwickii':0.00007,(('ABBSI202-10':0.00000,('ABRVN365-06':0.00000,'ABRVN364-06':0.00000)'s__Kerivoula cf. hardwickii':0.00000)g__Kerivoula:0.00002,('ABRVN350-06':0.00000,'ABRVN340-06':0.00000)'s__Kerivoula cf. hardwickii':0.00002)g__Kerivoula:0.00001)g__Kerivoula:0.00001)g__Kerivoula:0.00002,(('ABBSI320-11':0.00002,'ABBSI324-11':0.00000)'s__Kerivoula hardwickii':0.00000,('ABBSI321-11':0.00000,(('ABBSI322-11':0.00000,'ABBSI325-11':0.00000)'s__Kerivoula hardwickii':0.00000,('ABBSI326-11':0.00000,'ABBSI323-11':0.00000)'s__Kerivoula hardwickii':0.00000)'s__Kerivoula hardwickii':0.00000)'s__Kerivoula hardwickii':0.00000)'s__Kerivoula hardwickii':0.00002)g__Kerivoula:0.00002)g__Kerivoula:0.00041)g__Kerivoula:0.00017)g__Kerivoula:0.00001)g__Kerivoula:0.00002)c__Mammalia,(('ABBWP065-06':0.00089,'ABBM320-05':0.00098)f__Vespertilionidae:0.00010,('ABBID023-09':0.00080,('ABFG389-10':0.00091,(('ABCMA190-06':0.00000,'ABCMA199-06':0.00000)'s__Myotis ikonnikovi':0.00000,('ABCMA198-06':0.00000,'ABCMA197-06':0.00000)'s__Myotis ikonnikovi':0.00000)'s__Myotis ikonnikovi':0.00099)'s__Myotis ikonnikovi':0.00004)f__Vespertilionidae:0.00003)f__Vespertilionidae:2.0E-5)c__Mammalia;`;
+
+const metadata_text = `Node,Name,Species
+A,Bob,Cow
+B,Jim,Cow
+C,Joe,Fish
+D,John,Fish`;
+
+// Metadata is optional
+const metadata = {
+  filename: "test.csv",
+  data: metadata_text,
+  status: "loaded",
+  filetype: "meta_csv",
+};
+
+const sourceData = {
+  status: "loaded",
+  filename: "test.nwk",
+  data: nwk,
+  filetype: "nwk",
+  metadata: null,
+};
+  </script>
+
+  <script>
+    ReactDOM.render(
+      React.createElement(Taxonium, { sourceData: sourceData }),
+      document.getElementById("root")
+    );
+  </script>
+</body>
+</html>
